@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+.first_fold_div {
+    position: relative;
+}
+.cover_photo {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.cover_photo_mobile {
+    display: none;
+}
+.inner_image_wrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+}
+.inner_image {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+.banner_contents {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+.banner_contents p:first-child {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+.banner_contents p:nth-child(2) {
+    font-size: 52px;
+    text-align: center;
+    margin: 8px 0 22px 0;
+    font-family: 'Mukta', sans-serif;
+}
+.ganesh_mantra {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 80px 100px;
+    padding: 32px 0;
+    font-size: 36px;
+    background-color: #F1F1F1;
+}
+.generic_hr {
+    margin: 0 200px;
+}
+.ganesh_mantra p:first-child {
+    margin: 0 0 14px 0;
+}
+.ganesh_mantra p:nth-child(2) {
+    margin: 0;
+}
+.couple_info_div {
+    background-color: black;
+    padding: 100px;
+    position: relative;
+}
+.couple_info_div p {
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+.events_wrapper {
+    margin: 80px 100px;
+    padding: 32px 60px;
+    background-color: #F1F1F1;
+}
+.event_headline {
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+.single_event_wrapper {
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+}
+.event_info {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+}
+.event_info p:first-child {
+    margin: 0;
+    font-size: 32px;
+    font-family: 'Mukta', sans-serif;
+}
+.event_info p:nth-child(2) {
+    font-size: 28px;
+    font-family: 'Mukta', sans-serif;
+}
+.event_info p:nth-child(3) {
+    font-size: 26px;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+.event_image {
+    width: 50%;
+    height: 300px;
+}
+.event_image img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 100%;
+}
+.invite_quote {
+    font-family: 'Nunito', sans-serif;
+    margin: 120px 0 0 0;
+    padding: 0 200px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .cover_photo {
+        display: none;
+    }
+    .cover_photo_mobile {
+        display: block;
+        width: 100%;
+    }
+    .banner_contents {
+        top: 30%;
+        color: #000;
+    }
+    .banner_contents p:first-child {
+        font-size: 24px;
+    }
+    .banner_contents p:nth-child(2) {
+        font-size: 26px;
+        margin: 0;
+    }
+    .inner_image_wrapper {
+        top: 45%;
+        left: 50%;
+        width: 50%;
+        height: 18%;
+        border: 5px solid peachpuff;
+    }
+    .ganesh_mantra {
+        margin: 40px 0px;
+        font-size: 24px;
+    }
+    .generic_hr {
+        margin: 0 50px;
+    }
+    .couple_info_div {
+        padding: 65px;
+    }
+    .couple_info_div p {
+        top: 10%;
+        left: 50%;
+        font-size: 22px;
+        text-align: center;
+    }
+    .events_wrapper {
+        margin: 0;
+        padding: 32px 20px;
+    }
+    .event_headline {
+        font-size: 24px;
+    }
+    .event_info p:first-child {
+        font-size: 16px;
+    }
+    .event_info p:nth-child(2) {
+        font-size: 16px;
+    }
+    .event_info p:nth-child(3) {
+        font-size: 16px;
+    }
+    .event_image {
+        height: 200px;
+    }
+    .event_info {
+        margin: 26px auto;
+    }
+    .invite_quote {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+}
