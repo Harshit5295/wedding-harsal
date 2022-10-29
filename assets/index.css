@@ -66,6 +66,7 @@ body {
     background-color: black;
     padding: 100px;
     position: relative;
+    overflow: hidden;
 }
 .couple_info_div p {
     position: absolute;
@@ -130,6 +131,38 @@ body {
     font-size: 24px;
     text-align: center;
 }
+.gallery_wrapper {
+    padding: 30px;
+    background-color: #F1F1F1;
+}
+.gallery_headline {
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+.galley_images_wrapper_row_1 {
+    width: 100%;
+    display: flex;
+}
+.galley_images_wrapper_row_2 {
+    width: 100%;
+    display: flex;
+}
+.single_gallery_image_wrapper {
+    width: 25%;
+    height: 300px;
+    display: inline-block;
+    background-color: #000000;
+}
+.single_gallery_image_wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    opacity: 0.7;
+}
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .cover_photo {
@@ -140,19 +173,23 @@ body {
         width: 100%;
     }
     .banner_contents {
-        top: 30%;
-        color: #000;
+        top: 40%;
+        width: 100%;
+        left: 35%;
+        color: black;
     }
     .banner_contents p:first-child {
         font-size: 24px;
+        text-align: right;
     }
     .banner_contents p:nth-child(2) {
-        font-size: 26px;
+        font-size: 34px;
         margin: 0;
+        text-align: right;
     }
     .inner_image_wrapper {
-        top: 45%;
-        left: 50%;
+        top: 60%;
+        left: 60%;
         width: 50%;
         height: 18%;
         border: 5px solid peachpuff;
@@ -167,10 +204,13 @@ body {
     .couple_info_div {
         padding: 65px;
     }
+    .couple_info_div img {
+        margin: 25px 0 0 0;
+    }
     .couple_info_div p {
-        top: 10%;
+        top: 15%;
         left: 50%;
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
     .events_wrapper {
@@ -199,5 +239,33 @@ body {
         margin: 0;
         padding: 0;
         font-size: 18px;
+    }
+    .gallery_wrapper {
+        padding: 0;
+    }
+    .gallery_headline {
+        font-size: 26px;
+    }
+    .galley_images_wrapper_row_1 {
+        width: 100%;
+        display: block;
+    }
+    .galley_images_wrapper_row_2 {
+        width: 100%;
+        display: block;
+    }
+    .single_gallery_image_wrapper {
+        width: 100%;
+        height: 300px;
+        display: inline-block;
+        background-color: #000000;
+    }
+    .single_gallery_image_wrapper img {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        max-height: 300px;
+        object-fit: cover;
+        opacity: 0.7;
     }
 }
